@@ -32,3 +32,8 @@ console.log(attri.hasAttribute("placeholder"));
 console.log(gettingAttribute);
 attri.removeAttribute("placeholder");
 console.log(attri.hasAttribute("placeholder"));
+
+let datas = document.getElementById("data");
+console.log(datas.dataset.price);
+console.log(datas.dataset.productId);
+//instead of product-id, we can use productId in JavaScript to access the data attribute value.
