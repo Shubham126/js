@@ -1,14 +1,14 @@
 let human = {
     eat: true,
+    sleep: true,
     walk: true,
-    sleep: true
+    talk: true
 }
 
 let boy = {
-    name: "Subham",
+    name: "Subham"
 }
 
-boy.__proto__ = human;
-
+Object.setPrototypeOf(boy, human);
 console.log(boy.name);
 console.log(boy.eat);
