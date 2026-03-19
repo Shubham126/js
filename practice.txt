@@ -1,0 +1,22 @@
+console.log(document.body.childNodes)
+
+console.log(document.body.firstChild)
+console.log(document.body.firstElementChild)
+
+console.log(document.body.lastChild)
+console.log(document.body.lastChilldElement)
+
+let h1 = document.querySelector("h1")
+
+console.log(h1.nextSibling)
+console.log(h1.nextElementSibling)
+
+console.log(h1.previousSibling)
+console.log(h1.previousElementSibling)
+
+console.log(h1.parentNode);
+
+document.body.style.background = "Red"
+
+let h2 = document.querySelector("h2")
+h2.nextElementSibling.style.color = "blue"

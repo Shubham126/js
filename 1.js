@@ -15,12 +15,11 @@ let name4 = "Subham Kumar"
 console.log(name4.replace("Kumar", "Yadav"));
 
 //5th
-
 let fruit1 = "Apple";
 let fruit2 = "Mango";
 let fruits = fruit1.concat(" ", fruit2);    
 console.log(fruits);
 
-//6th 
+//6th
 let text1 = "    Hello World!  I  am  revising  Javascript    ";
 console.log(text1.trim());
