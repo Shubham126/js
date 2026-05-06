@@ -39,7 +39,7 @@ const people = [
     age: 24,
     email: "neha.gupta@example.com"
   }
-];
+]; 
 
 const updatedPeople = people.map((person, index) => ({
   id: index + 1,
