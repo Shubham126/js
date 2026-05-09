@@ -13,3 +13,30 @@ function printItem(item){
 }
 
 coding.forEach(printItem);
+
+coding.forEach( (item, index, arr) => {
+    console.log(item, index, arr);
+});
+
+const myCoding = [
+    {
+        language: 'JavaScript',
+        languageFilename: 'js'
+    },
+    {
+        language: 'Python',
+        languageFilename: 'py'
+    },
+    {
+        language: 'Ruby',
+        languageFilename: 'rb'
+    },
+    {
+        language: 'Go',
+        languageFilename: 'go'
+    }
+]
+
+myCoding.forEach( (item) => {
+    console.log(item.language, item.languageFilename);
+});
