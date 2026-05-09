@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Set Timeout</title>
+</head>
+<body>
+    <h1> Hello in the process of learning js </h1>
+    <button id="start">Start</button>
+    <button id="stop">Stop</button>
+</body>
+<script>
+    // setInterval(function(){
+    //     console.log("Shubham", Date.now())
+    // }, 2000)
+
+    // const sayDate = function(str){
+    //     console.log(str, Date.now())
+    // }
+
+    // const intervalId = setInterval(sayDate, 2000, "Shubham")
+
+    // clearInterval(intervalId)
+
+    let intervalId;
+
+    const start = function(){
+        if(!intervalId){
+            intervalId = setInterval(function(){
+                console.log("shubham", Date.now())
+            }, 2000)
+        }
+    }
+    
+    document.querySelector('#start').addEventListener('click', start)
+
+    document.querySelector('#stop').addEventListener('click', function(){
+        clearInterval(intervalId)
+        intervalId = null;
+        console.log("stopped")
+    })
+</script>
+</html>

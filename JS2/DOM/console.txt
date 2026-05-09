@@ -1,0 +1,32 @@
+1. document.getElementById('title')
+
+2. document.getElementById('title').id
+
+3. document.getElementById('title').class
+
+4. document.getElementById('title').className
+
+5. document.getElementById('title').getAttribute()
+
+6. document.getElementById('title').getAttribute('id')
+
+7. document.getElementById('title').getAttribute('class')
+
+8. document.getElementById('title').setAttribute('class', 'test')
+
+9. const title = document.getElementById('title');
+
+10. title.style.backgroundColor='green'
+
+11. title.style.padding='15px'
+
+12. title.style.borderRadius='15px'
+
+13. const title = document.getElementById('title')
+
+14. title.textContent
+
+15. title.innerHTML
+
+16. title.innerText
+
