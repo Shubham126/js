@@ -5,3 +5,12 @@ const newNums = numbers.map( (num) => {
 })
 
 console.log(newNums);
+
+//chaining
+
+const newNums2 = numbers
+.map( (num) => num * 10)
+.map( (num) => num + 6)
+.filter((num) => num > 50 && num < 100);
+
+console.log(newNums2);
