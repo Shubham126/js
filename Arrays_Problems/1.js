@@ -1,0 +1,9 @@
+//Remove duplicates from an array
+
+function removeDupliocates(arr){
+    return [...new Set(arr)]
+}
+
+const arr = [1, 2, 3, 3, 4, 5, 6, 6, 6, 7 ,8, 8]
+
+console.log(removeDupliocates(arr));
