@@ -1,0 +1,62 @@
+<!doctype HTML>
+<HTML>
+    <HEAD>
+        <title>debounce</title>
+    </HEAD>
+    <BODY>
+        <h1>Debunce search</h1>
+        <input type="text" id = "searchInput" placeholder="enter the text here" />
+        <ul id = "result"></ul>
+
+        <script>
+            const fruits = ["apple", "mango", "papaya", "orange", "banana", "watermelon"]
+
+            const searchInput = document.getElementById("searchInput")
+            const result = document.getElementById("result")
+
+            // to display fruits
+
+            function displayFruits(items){
+                result.innerHTML = ""
+
+                items.forEach((fruit)=>{
+                    const li = document.createElement("li")
+                    li.textContent = fruit
+                    result.appendChild(li)
+                })
+            }
+
+            //Display all fruits at once
+
+            displayFruits(fruits)
+
+            function searchFruits(){
+                const searchItem = searchInput.value.toLowerCase()
+
+                const filterItems =  fruits.filter((fruit)=>{
+                    return fruit.toLowerCase().includes(searchItem)
+                })
+
+                displayFruits(filterItems)
+            }
+
+            function debounce(func, delay){
+
+                let timer;
+
+                return function(){
+                    clearTimeout(timer);
+
+                    timer = setTimeout(()=>{
+                        func()
+                    }, delay)
+                }
+            }
+
+            let debouncedSearch = debounce(searchFruits, 1000)
+
+            searchInput.addEventListener("input", debouncedSearch)
+
+        </script>
+    </BODY>
+</HTML>
